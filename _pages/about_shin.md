@@ -1,6 +1,6 @@
 **신동화 (Shin Donghwa)**
 
-Professor, HDI Lab
+**Positions:** Professor
 
 **Research Interests:** Information Visualization, Visual Analytics, Machine Learning
 

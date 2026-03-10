@@ -1,6 +1,6 @@
 **우승범 (Woo Sungbeom)**
 
-Undergraduate Researcher, HDI Lab
+**Positions:** Undergraduate Researcher
 
 **Research Interests:** Information Visualization
 

@@ -1,6 +1,6 @@
 **김찬진 (Kim Chanjin)**
 
-Undergraduate Researcher, HDI Lab
+**Positions:** Undergraduate Researcher
 
 **Research Interests:** Machine Learning
 

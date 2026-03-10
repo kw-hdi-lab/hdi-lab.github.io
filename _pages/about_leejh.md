@@ -1,6 +1,6 @@
 **이제호 (Lee Jeho)**
 
-Undergraduate Researcher, HDI Lab
+**Positions:** Undergraduate Researcher
 
 **Research Interests:** Visual Analytics
 
