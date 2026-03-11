@@ -14,11 +14,11 @@ profiles:
   # Undergraduate Researchers
   - content: about_kimcj.md
     image: kimcj_picture.jpg
-    align: right
+    align: left
   - content: about_leejh.md
     image: leejh_picture.jpg
     align: left
   - content: about_woosb.md
     image: woosb_picture.jpg
-    align: right
+    align: left
 ---

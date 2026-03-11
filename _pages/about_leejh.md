@@ -1,7 +1,7 @@
-**이제호 (Lee Jeho)**
+**Lee Jeho**
 
 **Positions:** Undergraduate Researcher
 
 **Research Interests:** Visual Analytics
 
-**Contact:** 010-5830-2782, jehohi04@gmail.com
+**Contact:** 82+ 10-5830-2782, jehohi04@gmail.com

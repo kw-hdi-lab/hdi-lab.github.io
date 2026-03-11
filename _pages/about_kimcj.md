@@ -1,4 +1,4 @@
-**김찬진 (Kim Chanjin)**
+**Kim Chanjin**
 
 **Positions:** Undergraduate Researcher
 
