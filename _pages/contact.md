@@ -15,15 +15,24 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 
 ## Location
 
-<div id="contact-map" style="width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 8px;"></div>
+<div id="contact-map" style="width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 8px; outline: none;"></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css">
+<style>
+  #contact-map:focus, #contact-map:active,
+  #contact-map *:focus, #contact-map *:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  var map = L.map('contact-map').setView([37.61979772807333, 127.06093970420036], 16, DFFxHHmQRoAl3CPIlnBb);
-  L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=${Maptiler_Key}', {
-    maxZoom: 19
+  var map = L.map('contact-map', { zoomControl: false }).setView([37.61979772807333, 127.06093970420036], 16);
+  L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=DFFxHHmQRoAl3CPIlnBb', {
+    maxZoom: 19,
+    tileSize: 512,
+    zoomOffset: -1
   }).addTo(map);
   L.marker([37.61979772807333, 127.06093970420036]).addTo(map)
     .bindPopup('<b>HDI Lab</b><br>광운대학교 새빛관 704호')
