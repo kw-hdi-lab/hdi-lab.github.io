@@ -16,7 +16,13 @@ document.addEventListener("readystatechange", () => {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
       let geoJSON = L.geoJSON(JSON.parse(jsonData)).addTo(map);
-      map.fitBounds(geoJSON.getBounds());
+      var bounds = geoJSON.getBounds();
+      if (bounds.getNorthEast().equals(bounds.getSouthWest())) {
+        map.setView(bounds.getCenter(), 15);
+      } else {
+        map.fitBounds(bounds);
+      }
+      setTimeout(() => map.invalidateSize(), 100);
     });
   }
 });
