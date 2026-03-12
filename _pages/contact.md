@@ -21,7 +21,7 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  var map = L.map('contact-map').setView([37.61979772807333, 127.06093970420036], 16, "DFFxHHmQRoAl3CPIlnBb");
+  var map = L.map('contact-map').setView([37.61979772807333, 127.06093970420036], 16, DFFxHHmQRoAl3CPIlnBb);
   L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=${Maptiler_Key}', {
     maxZoom: 19
   }).addTo(map);
