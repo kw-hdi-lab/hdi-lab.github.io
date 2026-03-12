@@ -13,7 +13,7 @@ The lab is looking for excellent undergraduate and graduate students. If you wan
 - **Office:** Room 704, Saebit-gwan, 20 Gwangun-ro, Nowon-gu, Seoul 01897, Republic of Korea
 - **Number:** 82+ 2-940-8474
 
-### Location
+#### Location
 
 <div id="contact-map" style="width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 8px; outline: none;"></div>
 
