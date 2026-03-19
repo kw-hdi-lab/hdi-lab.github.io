@@ -19,8 +19,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Our lab explores visual understanding of complex data, intelligent decision-making optimization, and trustworthy AI technologies.
+We aim to effectively analyze complex data generated across diverse domains and develop interactive systems and intelligent frameworks that can be applied to real-world problem solving.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+1. [**Visualization**] Capability in Building Visual Analytics Platforms for Complex Spatiotemporal and High-Dimensional Data
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+We design interactive visual analytics environments that enable intuitive exploration of the spatiotemporal context of complex data generated from diverse domains such as urban data, network logs, and moving objects.
+By leveraging web-based high-performance rendering engines, we build analytical systems that can visualize large-scale real-time data without latency and help users rapidly uncover meaningful patterns hidden within the data.
+
+2. [**Machine Learning & Optimization**] Capability in Intelligent Algorithm-Based Complex Optimization and Reinforcement Learning for Decision Support
+
+We apply advanced metaheuristic and AI optimization techniques, including Genetic Algorithms (GA) and Reinforcement Learning (RL), to solve resource allocation and policy optimization problems involving complex constraints.
+Through agent-based simulation environments, we explore and learn optimal strategies to develop intelligent decision-support systems that can flexibly respond to the complexity of real-world domains.
+
+3. [**AI Reliability**] Capability in Human-Centered Explainable AI (XAI) and Model Reliability Verification
+
+We develop core technologies that visually and transparently explain the reasoning behind black-box AI models, while enabling users to directly interact with data and audit logical flaws or biases in real time.
+In high-stakes domains such as healthcare, transportation, and security, we propose interactive analytical frameworks that allow experts to evaluate and improve not only model performance but also validity and explainability.
