@@ -4,4 +4,4 @@
 
 **Research Interests:** Machine Learning
 
-**Contact:** khlk0713@naver.com
+**Contact:** khlk0713@kw.ac.kr
