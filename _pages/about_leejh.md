@@ -4,4 +4,4 @@
 
 **Research Interests:** Visual Analytics
 
-**Contact:** jehohi04@gmail.com
+**Contact:** {% include obfuscated_email.liquid b64="amVob2hpMDRAZ21haWwuY29t" plain_email="jehohi04@gmail.com" %}

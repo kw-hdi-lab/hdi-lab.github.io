@@ -4,6 +4,6 @@
 
 **Research Interests:** Information Visualization, Visual Analytics, Machine Learning
 
-**Contact:** 82+ 2-940-8474, dhshin@kw.ac.kr
+**Contact:** 82+ 2-940-8474, {% include obfuscated_email.liquid b64="ZGhzaGluQGt3LmFjLmty" plain_email="dhshin@kw.ac.kr" %}
 
 **Office:** Room 704, Saebit-gwan, Kwangwoon University

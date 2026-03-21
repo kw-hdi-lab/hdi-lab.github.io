@@ -9,7 +9,7 @@ nav_order: 5
 
 The lab is looking for excellent undergraduate and graduate students. If you want to do research in HDI Lab, please contact Donghwa Shin.
 
-- **Email:** dhshin@kw.ac.kr
+- **Email:** {% include obfuscated_email.liquid b64="ZGhzaGluQGt3LmFjLmty" plain_email="dhshin@kw.ac.kr" %}
 - **Office:** Room 704, Saebit-gwan, 20 Gwangun-ro, Nowon-gu, Seoul 01897, Republic of Korea
 - **Number:** 82+ 2-940-8474
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var map = L.map('contact-map', { zoomControl: false }).setView([37.61979772807333, 127.06093970420036], 17);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href=OpenStreetMap</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
   L.marker([37.61979772807333, 127.06093970420036]).addTo(map)
     .bindPopup('<b>HDI Lab</b><br>광운대학교 새빛관 704호')
@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() { map.invalidateSize(); }, 200);
 });
 </script>
+{% include email_obfuscate_script.liquid %}
