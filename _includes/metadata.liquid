@@ -18,6 +18,11 @@
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
+{% comment %}Browsers often request /favicon.ico before parsing the rest of the head; keep root favicon.ico in sync with assets/img (see deploy workflow).{% endcomment %}
+{% assign icon_len = site.icon | size %}
+{% if site.icon != blank and icon_len > 4 %}
+  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>

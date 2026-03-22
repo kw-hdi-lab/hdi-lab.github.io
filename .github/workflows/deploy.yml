@@ -88,6 +88,8 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Root favicon for browsers 🌐
+        run: cp assets/img/favicon.png favicon.ico
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
