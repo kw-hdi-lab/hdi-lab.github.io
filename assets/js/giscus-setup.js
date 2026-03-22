@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "kw-hdi-lab/hdi-lab.github.io",
+    "data-repo": "kw-hdi-lab/kw-hdi-lab.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
