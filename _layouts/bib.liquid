@@ -1,7 +1,15 @@
 ---
 ---
 <div class="row">
+  {% comment %} Left column only when there is a badge or preview; empty col-sm-2 otherwise shifted text away from the margin. {% endcomment %}
+  {% assign bib_show_left_col = false %}
   {% if site.enable_publication_thumbnails %}
+    {% if entry.abbr or entry.preview %}
+      {% assign bib_show_left_col = true %}
+    {% endif %}
+  {% endif %}
+
+  {% if bib_show_left_col %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
@@ -46,7 +54,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if bib_show_left_col %}col-sm-10{% else %}col-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
