@@ -15,7 +15,10 @@ _styles: |
   }
 ---
 
+<div class="publications">
 
-#### References
+<h2 class="pub-category">References</h2>
 
 {% bibliography --file optimizing_drt.bib --group_by none --query @* %}
+
+</div>

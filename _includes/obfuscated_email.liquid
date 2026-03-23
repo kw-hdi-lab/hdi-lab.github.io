@@ -1,4 +1,4 @@
-{% assign _label = include.label | default: "이메일 보내기" %}
+{% assign _label = include.label | default: "Send E-mail" %}
 <a
   href="mailto:{{ include.plain_email | encode_email }}"
   class="email-obfuscate-link"
