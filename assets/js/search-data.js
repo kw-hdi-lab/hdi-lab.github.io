@@ -433,8 +433,8 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-optimizing-drt-scheduling",
-          title: 'Optimizing (DRT) Scheduling',
+            },},{id: "projects-optimizing-demand-responsive-transport-drt-scheduling",
+          title: 'Optimizing Demand Responsive Transport (DRT) Scheduling',
           description: "Chanjin Kim",
           section: "Projects",handler: () => {
               window.location.href = "/projects/optimizing_drt/";
