@@ -19,5 +19,4 @@ These data are used to compute surrogate safety indicators, and the resulting ou
 
 {% include figure.liquid loading="eager" path="assets/img/sumo_visualizaion.png" title="System overview" alt="System overview of the SUMO-based visualization pipeline" class="img-fluid rounded z-depth-1" %}
 
-
-## Reference
+<div class="d-none" aria-hidden="true">{% cite krajzewicz2012sumo minderhoud2001ttc %}</div>
