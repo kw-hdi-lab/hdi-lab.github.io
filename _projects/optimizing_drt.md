@@ -23,9 +23,21 @@ This project is reinforcement learning framework to optimize online scheduling i
 
 This research aims to develop an intelligent scheduling framework for Demand Responsive Transport (DRT) that can effectively respond to dynamically changing travel demand in real time. Unlike conventional fixed-route public transit or static optimization approaches, the proposed framework addresses the inherent complexity of online DRT operations, where requests arrive sequentially and operational constraints continuously evolve. To achieve this, we formulate online DRT scheduling as a Markov Decision Process (MDP) and design a Double Deep Q-Network (DDQN)-based policy that learns how to make adaptive scheduling decisions under uncertainty. The ultimate goal of this study is to improve both service quality and operational efficiency by reducing passenger waiting time and ride time, while increasing service rate and maintaining robust performance across varying demand and operational conditions.
 
-### Metodology
+### Methodology
 
+The online DRT scheduling task is modeled as a Markov Decision Process (MDP). At each decision step, the state represents the real-time system context, including vehicle status, outstanding requests, and travel-related information. The action space consists of scheduling decisions such as assigning vehicles to requests or rejecting infeasible requests, while the reward is designed to balance service performance and operational efficiency. This MDP formulation provides the foundation for learning adaptive scheduling policies in dynamic and uncertain environments.
 
+#### State Space
+
+To be added later
+
+#### Action Space
+
+To be added later
+
+#### Reward Design
+
+To be added later
 
 #### Double Deep Q-Network (DDQN)
 
@@ -49,14 +61,13 @@ $$
 
 To further improve training stability and exploration efficiency, the framework incorporates experience replay and an  ε-greedy strategy. This enables more stable and reliable policy learning for online decision-making problems such as real-time DRT scheduling.
 
-
 #### Q-Value-Based Iterative Decision-Making Framework
 
-
+A Q-value-based iterative decision-making framework for multi-vehicle DRT scheduling. Rather than assigning all vehicle actions simultaneously, the framework selects the most promising vehicle–action pair step by step based on Q-values, updates the virtual system state after each assignment, and repeats the process until all vehicles are assigned. This iterative approach captures interdependencies among vehicles and enables more reliable and efficient system-level decisions in dynamic environments.
 
 #### Action Space Reduction Strategy
 
-
+Action space reduction strategy to improve the efficiency of centralized multi-vehicle DRT scheduling. A fixed action space is pre-defined to avoid costly dynamic action generation, while action masking is applied to remove infeasible actions at each decision step. This design reduces computational overhead, stabilizes learning, and supports fast and scalable real-time inference.
 
 
 <div class="publications">
