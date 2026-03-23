@@ -47,4 +47,3 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() { map.invalidateSize(); }, 200);
 });
 </script>
-{% include email_obfuscate_script.liquid %}
