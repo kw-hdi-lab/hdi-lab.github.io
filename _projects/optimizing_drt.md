@@ -16,6 +16,6 @@ _styles: |
 ---
 
 
-#### **References**
+#### References
 
 {% bibliography --file optimizing_drt.bib --group_by none --query @* %}
