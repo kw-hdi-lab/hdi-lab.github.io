@@ -5,7 +5,7 @@ description: Chanjin Kim
 img: assets/img/sioux_falls_network.jpeg
 importance: 1
 category: Active
-related_publications: true
+related_publications: false
 scholar:
   bibliography: optimizing_drt.bib
 _styles: |
@@ -15,3 +15,7 @@ _styles: |
   }
 ---
 
+
+## References
+
+{% bibliography --file optimizing_drt.bib --group_by none --query @* %}

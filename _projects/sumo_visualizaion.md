@@ -5,7 +5,7 @@ description: Jeho Lee
 img: assets/img/sumo_visualizaion.png
 importance: 1
 category: Completed
-related_publications: true
+related_publications: false
 scholar:
   bibliography: sumo_visualizaion.bib
 _styles: |
@@ -17,8 +17,8 @@ _styles: |
 
 ### Abstract
 
-This project develops an interactive visualization system for microscopic, simulation-based safety analysis at urban intersections. 
-Using a SUMO-based pipeline, the system combines synchronized traffic maps, lane-level views, and time-series charts to visualize surrogate safety indicators such as TTC, MTTC, and DRAC in real time. By enabling detailed spatial-temporal comparison across different automated vehicle market penetration scenarios, the system helps reveal how increasing automated vehicle adoption can improve intersection safety through larger safety margins and more stable braking behavior.
+This project develops an interactive visualization system for microscopic, simulation-based safety analysis at urban intersections.
+Using a SUMO-based pipeline {% cite krajzewicz2012sumo %}, the system combines synchronized traffic maps, lane-level views, and time-series charts to visualize surrogate safety indicators such as TTC, MTTC, and DRAC in real time {% cite minderhoud2001ttc %}. By enabling detailed spatial-temporal comparison across different automated vehicle market penetration scenarios, the system helps reveal how increasing automated vehicle adoption can improve intersection safety through larger safety margins and more stable braking behavior.
 
 ### System Overview
 
@@ -48,4 +48,6 @@ The interface is designed as a synchronized multi-panel analytical environment c
 
     The Configuration and Segment Playback Control enables selection of junction, MPR, time, and playback segments. Spatial and temporal views remain synchronized during animation.
 
-<div class="d-none" aria-hidden="true">{% cite krajzewicz2012sumo minderhoud2001ttc %}</div>
+## References
+
+{% bibliography --file sumo_visualizaion.bib --group_by none --query @* %}
