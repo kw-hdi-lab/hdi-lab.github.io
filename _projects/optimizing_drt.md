@@ -59,7 +59,7 @@ $$
 \mathcal{L}(\theta) = \mathbb{E}\left[ \left( y_t - Q(s_t, a_t; \theta) \right)^2 \right]
 $$
 
-To further improve training stability and exploration efficiency, the framework incorporates experience replay and an  ε-greedy strategy. This enables more stable and reliable policy learning for online decision-making problems such as real-time DRT scheduling.
+To further improve training stability and exploration efficiency, the framework incorporates experience replay and an  ε-greedy strategy. This enables more stable and reliable policy learning for online decision-making problems such as real-time DRT scheduling.<br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -70,11 +70,10 @@ To further improve training stability and exploration efficiency, the framework 
 <div class="caption">
     DDQN-based learning process
 </div>
-<div class="publications">
 
 #### Q-Value-Based Iterative Decision-Making Framework
 
-A Q-value-based iterative decision-making framework for multi-vehicle DRT scheduling. Rather than assigning all vehicle actions simultaneously, the framework selects the most promising vehicle–action pair step by step based on Q-values, updates the virtual system state after each assignment, and repeats the process until all vehicles are assigned. This iterative approach captures interdependencies among vehicles and enables more reliable and efficient system-level decisions in dynamic environments.
+A Q-value-based iterative decision-making framework for multi-vehicle DRT scheduling. Rather than assigning all vehicle actions simultaneously, the framework selects the most promising vehicle–action pair step by step based on Q-values, updates the virtual system state after each assignment, and repeats the process until all vehicles are assigned. This iterative approach captures interdependencies among vehicles and enables more reliable and efficient system-level decisions in dynamic environments.<br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -85,11 +84,10 @@ A Q-value-based iterative decision-making framework for multi-vehicle DRT schedu
 <div class="caption">
     Q-Value-Based Iterative Action Assignment in Centralized Framework
 </div>
-<div class="publications">
 
 #### Action Space Reduction Strategy
 
-Action space reduction strategy to improve the efficiency of centralized multi-vehicle DRT scheduling. A fixed action space is pre-defined to avoid costly dynamic action generation, while action masking is applied to remove infeasible actions at each decision step. This design reduces computational overhead, stabilizes learning, and supports fast and scalable real-time inference.
+Action space reduction strategy to improve the efficiency of centralized multi-vehicle DRT scheduling. A fixed action space is pre-defined to avoid costly dynamic action generation, while action masking is applied to remove infeasible actions at each decision step. This design reduces computational overhead, stabilizes learning, and supports fast and scalable real-time inference.<br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
