@@ -84,6 +84,34 @@
         display: inline-block;
       }
 
+      .pub-preview-thumb {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: 0.35rem;
+        background-color: #fff;
+
+        figure {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+        }
+
+        picture,
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+
+        img {
+          object-fit: contain;
+          object-position: center;
+          background-color: #fff;
+        }
+      }
+
       .abbr {
         margin-bottom: 0.5rem;
 
@@ -243,6 +271,13 @@
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+// medium-zoom appends the clone to <body>; keep publication preview letterboxing (contain + white).
+img.medium-zoom-image--opened.pub-preview-zoom {
+  object-fit: contain;
+  object-position: center;
+  background-color: #fff;
 }
 
 // Layout page: References heading sits directly above .publications (sibling of <article>)

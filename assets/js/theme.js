@@ -87,6 +87,11 @@ let applyTheme = () => {
       background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
     });
   }
+  if (typeof medium_zoom_pub_preview !== "undefined") {
+    medium_zoom_pub_preview.update({
+      background: "#ffffff",
+    });
+  }
 };
 
 let setHighlight = (theme) => {
