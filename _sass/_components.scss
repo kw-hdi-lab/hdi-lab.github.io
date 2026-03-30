@@ -5,11 +5,10 @@
 // Checklist
 
 ul.task-list {
-  list-style-type: none;
-  /* Remove bullets from all levels */
+  list-style-type: none; /* Remove bullets from all levels */
 }
 
-ul.task-list>li ul {
+ul.task-list > li ul {
   /* Nested lists within .task-list */
   padding-inline-start: 1.5rem;
 }
@@ -205,7 +204,7 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 6.5rem; // 본문·푸터 사이 여백
 }
 
-.advising-page .people-position+.people-position {
+.advising-page .people-position + .people-position {
   margin-top: 4rem;
 }
 
@@ -218,22 +217,6 @@ ul.task-list input[type="checkbox"] {
   gap: 0;
 }
 
-// Advising: 연도(·계절) 블록 사이 (h2 하단선보다 약·짧게; 라이트 divider 희미해 text/bg mix)
-.people-position-body--advising-year-dividers .advising-year-group+.advising-year-group {
-  padding-top: 0;
-
-  &::before {
-    content: "";
-    display: block;
-    width: min(37.5rem, 100%);
-    height: 1px;
-    min-height: 1px;
-    margin-top: 0.25rem;
-    margin-bottom: 1.05rem;
-    background-color: color-mix(in srgb, var(--global-text-color) 11%, var(--global-bg-color) 89%);
-  }
-}
-
 .advising-year-group {
   margin-bottom: 1.65rem;
   padding-top: 1.15rem; // 연도(h3) 상단 여백 (마진 병합 없이 확보)
@@ -244,6 +227,24 @@ ul.task-list input[type="checkbox"] {
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+// Advising(참빛설계학기·졸업작품): 연도가 바뀔 때 구분선 (섹션 제목 밑줄보다 연하고 짧게)
+.advising-page .people-position .advising-year-group:not(:last-child) {
+  margin-bottom: 0.85rem; // splitter 직전 과한 간격 완화 (기본 1.65rem)
+}
+
+.advising-page .people-position .advising-year-group:not(:first-child) {
+  padding-top: 0.45rem; // 선 위 공간 최소화 (구분선이 역할 대신)
+
+  &::before {
+    content: "";
+    display: block;
+    width: min(100%, calc(68% * 1.5), 39rem);
+    height: 1px;
+    background: color-mix(in srgb, var(--global-divider-color) 78%, transparent);
+    margin: 0 0 0.9rem;
   }
 }
 
@@ -266,29 +267,26 @@ ul.task-list input[type="checkbox"] {
 }
 
 .advising-entry__title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
   margin-bottom: 0.15rem;
-  line-height: 1.5;
 
   .advising-entry__title {
-    display: inline-block;
-    vertical-align: top;
     margin-bottom: 0;
-    margin-right: 0.6rem;
+    flex: 0 1 auto;
     max-width: min(40rem, 100%);
+    min-width: 0;
+    line-height: 1.5;
     word-break: keep-all;
     overflow-wrap: break-word;
     line-break: normal;
     hyphens: manual;
   }
 
-  .advising-entry__badges {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4rem 0.6rem;
-    vertical-align: top;
-    max-width: 100%;
-    padding-top: 0.12em;
+  .advising-badge {
+    transform: translateY(-0.12em);
   }
 }
 
@@ -366,9 +364,8 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card {
-
     // Fixed-size thumbnails on /research/ (grid + horizontal layouts)
-    >figure {
+    > figure {
       margin: 0;
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -503,7 +500,7 @@ ul.task-list input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.wechat-modal>img {
+.wechat-modal > img {
   display: block;
   position: relative;
   top: 50%;
@@ -514,7 +511,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 400px) {
-  .wechat-modal>img {
+  .wechat-modal > img {
     width: 100%;
   }
 }
