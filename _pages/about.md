@@ -14,7 +14,7 @@ We aim to effectively analyze complex data generated across diverse domains and 
 
 ---
 
-<div class="row row-cols-1 row-cols-md-3 g-4 mb-4 about-research-cards">
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4 mb-4 about-research-cards">
   <div class="col d-flex">
     <article class="about-research-card w-100">
       <div class="about-research-card__media">
@@ -48,7 +48,7 @@ We aim to effectively analyze complex data generated across diverse domains and 
       </div>
     </article>
   </div>
-</div>
+</div> -->
 
 1. **[Data Analysis & Visualization]** Building Visual Analytics Platforms for Complex Spatiotemporal and High-Dimensional Data
 
