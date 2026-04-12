@@ -9,8 +9,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Our lab explores visual understanding of complex data, trustworthy AI technologies, and the optimization of Intelligent Transportation Systems (ITS).
-We aim to effectively analyze complex data generated across diverse domains and develop interactive systems and intelligent frameworks that can be applied to real-world problem-solving.
+Our lab is part of the School of Computer and Information Engineering at Kwangwoon University. We explore the visual understanding of complex data, trustworthy AI technologies, and the optimization of Intelligent Transportation Systems (ITS). Our research focuses on analyzing complex data generated across diverse domains to develop interactive systems and intelligent frameworks that can be applied to real-world problem-solving.
+
+We aim to bridge the gap between theoretical data analysis and practical application. By leveraging Kwangwoon University’s engineering heritage, we continue to build systems that enhance human-data interaction and provide reliable solutions for the challenges of modern infrastructure.
 
 ---
 
